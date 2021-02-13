@@ -102,7 +102,8 @@ a{display: block;}
     font-size: 14px;
     line-height: 1.14;
     text-decoration: none;
-    color: var(--secondary-color);}
+    color: var(--secondary-color);
+}
 
 .logo-title,
 .list-nav,
@@ -152,10 +153,6 @@ position: relative;}
     transform: scale(1);
 }
 
-
-
-
-
 .head-link:focus,
 .head-link:hover,
 .contacts:focus,
@@ -164,7 +161,7 @@ position: relative;}
 .contacts-email:hover,
 .contacts-tel:focus,
 .contacts-tel:hover { color: var(--accent-color);
-    transition: color 0.25s;
+    
     cursor: pointer;}
 
 
@@ -414,9 +411,10 @@ padding-top: 94px;}
     width: 44px;
     height: 44px;
     color: #afb1b8;    
-    ;
-
     border-radius: 50%;
+    transition-property: fill, background-color, color, filter;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -452,6 +450,9 @@ padding-top: 94px;}
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
+    transition-property: fill, border-color, color, filter;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-link:last-child {
     margin: 0;
@@ -665,7 +666,10 @@ padding-top: 94px;}
         text-align: center;
     
         outline: transparent;
-        color: var(--main-color);}
+        color: var(--main-color);
+        transition-property: background-color, color;
+        transition: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
     
     .buttons-section {
         padding-bottom: 50px;
@@ -710,7 +714,9 @@ padding-top: 94px;}
         
         .project-content {
             text-decoration: none;
-            
+            transition-property: box-shadow;
+            transition: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             
         }
         
@@ -723,6 +729,7 @@ padding-top: 94px;}
         }
         .project-content:hover, .project-content:focus {
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        outline: transparent;
         }
         
 
@@ -814,6 +821,8 @@ padding-top: 94px;}
        
 
 /* Backdrop */
+
+
 .backdrop {
     position: fixed;
     top: 0;
