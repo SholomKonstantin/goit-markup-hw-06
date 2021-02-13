@@ -92,7 +92,10 @@ a{display: block;}
 .current,
 .head-link {  padding: 32px 0;
     list-style: none;
-    text-decoration: none;}
+    text-decoration: none;
+    transition-property: color;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
 
 .list-nav,
 .head-link ,
@@ -103,6 +106,18 @@ a{display: block;}
     line-height: 1.14;
     text-decoration: none;
     color: var(--secondary-color);
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    padding: 32px 0 32px 0;
+
+    fill: currentColor;
+
+    transition-property: color;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-title,
@@ -230,6 +245,9 @@ background: var(--accent-color);
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-property: fill, background-color, color, filter;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .skills-icon-link {
@@ -242,6 +260,9 @@ background: var(--accent-color);
 
     background: #F5F4FA;
     border-radius: 4px;
+    transition-property: fill, background-color, color, filter;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -514,6 +535,7 @@ padding-top: 94px;}
     text-decoration: none;
 
     color: var(--secondary-color);
+    
 }
 
 
